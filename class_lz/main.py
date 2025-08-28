@@ -1,11 +1,12 @@
-from octagon import Octagon
+from octagon import Octagon #Импортируем класс
 
-# Создание объекта октагона
-octagon = Octagon(5)
+def main(): #Создаем функцию 
+    first = Octagon(8) #Добавляем объект
+    first.plo() #Используем все имеющиеся методы
+    first.per()
+    first.opis_okr()
+    first.vpis_okr()
+    first.pic()
 
-# Вывод параметров
-print(f"Площадь октагона: {octagon.area():.3f}")
-print(f"Периметр октагона: {octagon.perimeter():.3f}")
-
-# Отрисовка фигур
-octagon.draw()
+if __name__ == '__main__': 
+    main() 
